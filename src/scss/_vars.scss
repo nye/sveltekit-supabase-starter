@@ -1,0 +1,93 @@
+:root{
+	// Colors
+	--black: #26282B;
+	--white: #fff;
+
+	--grey-100: #F7FAFC;
+	--grey-200: #EDF2F7;
+	--grey-300: #E2E8F0;
+	--grey-400: #CBD5E0;
+	--grey-500: #A0AEC0;
+	--grey-600: #718096;
+	--grey-700: #4A5568;
+	--grey-800: #2D3748;
+	--grey-900: #1A202C;
+
+	--blue: hsl(220, 100%, 49%);
+	--yellow: hsl(49, 95.9%, 52.7%);
+	--red: #dc3545;
+
+	--cubic-bezier: cubic-bezier(0.7, 0, 0.3, 1);
+
+	--font-family-base: 'Inter var', sans-serif;
+
+	// Themable vars
+
+	--primary-color: hsl(220, 100%, 49%);
+	--primary-color-dark: hsl(220, 100%, 39%);
+
+	--secondary-color: hsl(49, 95.9%, 52.7%);
+	--secondary-color-dark: hsl(49, 95.9%, 42.7%);
+
+	--color: hsl(0, 0%, 15%);
+
+	--background-color: #fff;
+
+	--button-background: var(--grey-100);
+	--button-background-hover: var(--grey-300);
+	--button-group-border: var(--grey-300);
+
+	--toolbar-button-color: var(--grey-700);
+
+	--list-item-background: hsl(0, 0%, 100%);
+	--list-item-shadow: 1px 2px 6px -3px rgba(0, 0, 0, .23);
+	--list-item-hover-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .05);
+
+	--header-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+
+	--modal-background: hsl(0, 0%, 100%);
+	--modal-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+	--backdrop-color: hsla(197, 33%, 96%, 0.4);
+	
+	--border-color: var(--grey-300);
+
+	--success: #28a745;
+	--danger: #dc3545;
+	--warning: #ffc107;
+	--info: #17a2b8;
+
+	--max-content-width: 520px;
+}
+
+@media(prefers-color-scheme: dark){
+	:root{
+		--primary-color: hsl(49, 95.9%, 52.7%);
+		--primary-color-dark: hsl(49, 95.9%, 42.7%);
+
+		--secondary-color: hsl(220, 100%, 49%);
+		--secondary-color-dark: hsl(220, 100%, 39%);
+
+		--color: rgba(255, 255, 255, .87);
+
+		--background-color: hsl(0, 0%, 15.7%);
+
+		--button-background: hsl(0, 0%, 20%);
+		--button-background-hover: hsl(0, 0%, 10%);
+		--button-group-border: hsl(0, 0%, 8%);
+
+		--toolbar-button-color: var(--grey-300);
+
+		--list-item-background: hsl(0, 0%, 8%);
+		--list-item-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .5);
+		--list-item-hover-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .5);
+
+		--header-shadow: 0 2px 3px rgba(0, 0, 0, 1);
+
+		--modal-background: hsl(0, 0%, 20%);
+		--modal-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+
+		--backdrop-color: hsla(240, 1000%, 3%, 0.6);
+	}
+}
+

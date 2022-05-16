@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+   Albert Sunyer -- Web developer -- @nye
+
+# TECHNOLOGY COLOPHON
+
+    HTML, JS, CSS
+    SvelteKit, Supabase

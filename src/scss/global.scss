@@ -1,0 +1,96 @@
+@import "fonts";
+@import "vars";
+@import "normalize";
+@import "stuff";
+
+@-ms-viewport {
+	width: device-width;
+}
+
+:root {
+	accent-color: var(--primary-color);
+}
+
+body, html {
+	height: 100vh;
+	width: 100vw;
+}
+
+html{
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+	font-size: 16px;
+	height: 100vh;
+}
+
+body{
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-overflow-scrolling: touch;
+	
+	height: 100vh;
+	
+	padding: 0;
+
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	font-size: 1rem;
+	font-kerning: normal;
+	font-feature-settings: "kern" 1, "liga" 1, "ss01" 1, "calt" 1;
+	text-rendering: optimizeLegibility;
+
+	color: var(--color);
+	background-color: var(--background-color);
+
+	letter-spacing: -0.014em;
+	text-size-adjust: none;
+}
+
+::-moz-selection {
+	background: var(--primary-color);
+	color: var(--background-color);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--primary-color);
+	color: var(--background-color);
+	text-shadow: none;
+}
+
+h1, h2, h3, h4{
+	font-weight: 200;
+}
+
+h1{
+	font-size: 2rem;
+	line-height: 80%;
+	letter-spacing: -0.07rem;
+	color: var(--primary-color);
+}
+
+h2{
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: -.03rem;
+}
+
+a, a:visited{
+	text-decoration: none;
+	color: var(--primary-color);
+	transition: color 400ms var(--cubic-bezier);
+
+	&:hover, &:focus {
+		color: var(--secondary-color);
+		text-decoration: none;
+		transition: color 150ms var(--cubic-bezier);
+	}
+}
+
+#app{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}

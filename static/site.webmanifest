@@ -1,0 +1,12 @@
+{
+  "short_name": "Gestió",
+  "name": "Gestió",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/",
+  "background_color": "#fafcff",
+  "theme_color": "#0053FA"
+}
