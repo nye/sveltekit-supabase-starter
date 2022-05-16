@@ -29,6 +29,11 @@
             await unsetAuthCookie();
         }
     });
+
+    session.subscribe((value) => {
+        // Si trec aquest subscribe, dona errors fatals al fer login/logout
+        // TODO: Hauria d'investigar millor tot això...
+    });
 </script>
 
 
